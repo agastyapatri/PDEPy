@@ -6,7 +6,11 @@ The neural operator architectures encountered and dealt with are:
 2. Fourier Neural Operators (FNO)
 3. Geometrically Aware Neural Operators (geoFNO)
 4. General Adversarial Neural Operators (GANO)
-etc. 
+5. Physics Informed Neural Operator (PINO)
+
+
+PDEBench is a benchmark introduced to test the performance of these techniques. It also provides datasets which I will be using. 
+
 
 
 
