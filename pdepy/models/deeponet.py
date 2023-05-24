@@ -8,7 +8,6 @@ dtype = torch.float32
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 
-
 class LinearBlock(nn.Module):
     def __init__(self, in_features, out_features) -> None:
         super().__init__()
@@ -51,5 +50,4 @@ if __name__ == "__main__":
     branch_data = torch.randn(size=(150, 100), dtype = dtype, device = device)
     trunk_data = torch.randn(size=(100, 1), dtype = dtype, device = device)
     deeponet = DeepONet(branch_arch=BRANCH_ARCH, trunk_arch=TRUNK_ARCH) 
-    print(deeponet(branch_data, trunk_data))
-    
+    print(deeponet)
